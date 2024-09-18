@@ -74,12 +74,18 @@ img {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   font-weight: 400;
   font-size: 26px;
   color: #df3d0f;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -101,6 +107,11 @@ img {
   padding: 15px 8px;
   background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
   margin-left: 49px;
+}
+
+.protection:hover,
+.protection:focus {
+  color: black;
 }
 
 /* hero */
@@ -149,4 +160,39 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+}
+
+.hero-list {
+  display: flex;
+  gap: 44px;
+  margin: 90px auto;
+}
+
+.hero-list-item {
+  border-radius: 15px;
+  width: 334px;
+  height: 228px;
+  background-color: rgba(59, 52, 160, 0.27);
+  padding: 24px 38px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-list-text {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 114px;
+}
+
+.hero-list-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #f77307;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
 }
