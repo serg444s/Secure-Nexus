@@ -144,6 +144,11 @@ img {
   margin-bottom: 130px;
 }
 
+.btn-container {
+  display: flex;
+  gap: 27px;
+}
+
 .hero-button {
   width: 292px;
   height: 73px;
