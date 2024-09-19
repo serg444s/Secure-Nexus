@@ -12,7 +12,7 @@
       <header class="header">
         <a href="/index.html" class="logo">Secure Nexus</a>
         <div class="nav-container">
-          <nav>
+          <nav class="header-navigation">
             <ul class="nav-list">
               <li><a href="#home" class="nav-list-item">Home</a></li>
               <li><a href="#about" class="nav-list-item">About Us</a></li>
@@ -21,10 +21,33 @@
               <li><a href="#contact" class="nav-list-item">Contact</a></li>
             </ul>
           </nav>
+          <button type="button" class="menu-open">
+            <svg>
+              <use href="/icons/icons.svg#burger"></use>
+            </svg>
+          </button>
           <a href="#contact" class="protection">Get Protection Now</a>
         </div>
       </header>
-
+      <!-- modal -->
+      <div class="backdrop">
+        <div class="modal">
+          <button type="button" class="menu-close">
+            <svg>
+              <use href="./icons/icons.svg#icon-closeok"></use>
+            </svg>
+          </button>
+          <nav></nav>
+            <ul class="menu-nav-list">
+              <li><a href="#home" class="nav-list-item">Home</a></li>
+              <li><a href="#about" class="nav-list-item">About Us</a></li>
+              <li><a href="#services" class="nav-list-item">Services</a></li>
+              <li><a href="#resource" class="nav-list-item">Resource</a></li>
+              <li><a href="#contact" class="nav-list-item">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <main>
         <section>
           <div class="hero">
