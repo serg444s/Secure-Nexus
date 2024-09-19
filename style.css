@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: "Mashetic";
+  font-family: "Poppins", sans-serif;
   background-color: #001531;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -73,7 +74,6 @@ img {
 }
 
 .logo {
-  font-weight: 400;
   font-size: 26px;
   color: #df3d0f;
 }
@@ -89,7 +89,6 @@ img {
 }
 
 .nav-list-item {
-  font-weight: 400;
   font-size: 14px;
 }
 
@@ -223,14 +222,11 @@ img {
 }
 
 .hero-title {
-  font-weight: 400;
   font-size: 48px;
   margin-bottom: 10px;
 }
 
 .hero-text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   margin-bottom: 130px;
 }
@@ -244,7 +240,6 @@ img {
   width: 292px;
   height: 73px;
   background-color: transparent;
-  font-weight: 400;
   font-size: 24px;
   text-align: center;
   color: #fff;
@@ -279,7 +274,6 @@ img {
 }
 
 .hero-list-text {
-  font-weight: 400;
   font-size: 24px;
   text-align: center;
   margin-top: 114px;
@@ -344,14 +338,12 @@ img {
 }
 
 .about-us-title {
-  font-weight: 400;
   font-size: 38px;
   color: #e1400f;
   margin-bottom: 10px;
 }
 
 .about-us-description {
-  font-weight: 400;
   font-size: 14px;
 }
 
@@ -375,20 +367,17 @@ img {
 
 .about-main-title {
   max-width: 508px;
-  font-weight: 400;
   font-size: 38px;
 }
 
 .about-main-text {
   font-family: "Poppins";
-  font-weight: 400;
   font-size: 24px;
   margin-top: 10px;
 }
 
 .about-main-description {
   font-family: "Poppins";
-  font-weight: 400;
   font-size: 18px;
   margin-top: 12px;
 }
@@ -397,7 +386,6 @@ img {
   margin-top: 23px;
   padding: 12px 40px;
   background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
-  font-weight: 400;
   font-size: 18px;
   text-align: center;
   color: #fff;
@@ -413,7 +401,6 @@ img {
 /* services */
 
 .services-title {
-  font-weight: 400;
   font-size: 38px;
   text-align: center;
   max-width: 896px;
@@ -451,7 +438,6 @@ img {
   background-color: transparent;
   border: none;
   outline: none;
-  font-weight: 400;
   font-size: 18px;
   color: #e1400f;
   margin-top: 40px;
@@ -460,6 +446,7 @@ img {
     width: 16px;
     height: 14px;
     margin-left: 12px;
+    stroke-width: 1px;
     stroke: #e1400f;
     fill: #e1400f;
   }
@@ -476,10 +463,9 @@ img {
 }
 
 .services-text {
-  font-weight: 400;
   font-size: 24px;
   text-align: center;
-  max-width: 840px;
+  max-width: 960px;
   margin: 10px auto;
   margin-bottom: 50px;
 }
@@ -493,16 +479,14 @@ img {
 }
 
 .services-list-title {
-  font-weight: 400;
   font-size: 28px;
   text-align: center;
 }
 
 .services-list-text {
-  font-weight: 400;
   font-size: 18px;
   text-align: center;
-  max-width: 290px;
+  max-width: 320px;
 }
 
 /* resource */
@@ -510,31 +494,26 @@ img {
 .resource-container {
   display: flex;
   background-color: rgba(59, 52, 160, 0.27);
-  padding: 70px;
-  gap: 60px;
+  padding: 80px 20px;
   margin: 215px auto;
   align-items: center;
-}
-
-.resource-wrap {
-  width: 530px;
+  margin-bottom: 152px;
 }
 
 .resource-title {
-  font-weight: 400;
   font-size: 34px;
+  max-width: 631px;
 }
 
 .resource-text {
-  font-weight: 400;
   font-size: 18px;
   margin-top: 12px;
+  width: 419px;
 }
 
 .resource-list {
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  gap: 80px;
 }
 
 .resource-list-img {
@@ -545,7 +524,6 @@ img {
 }
 
 .resource-item-title {
-  font-weight: 400;
   font-size: 34px;
   text-align: center;
 }
@@ -563,12 +541,10 @@ img {
   width: 477px;
 }
 .contact-title {
-  font-weight: 400;
   font-size: 34px;
 }
 
 .contact-text {
-  font-weight: 400;
   font-size: 24px;
   margin-top: 12px;
 }
@@ -594,7 +570,6 @@ img {
 .contact-btn {
   padding: 16px 40px;
   background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
-  font-weight: 400;
   font-size: 18px;
   text-align: center;
   color: #fff;
@@ -623,7 +598,6 @@ img {
 }
 
 .footer-logo {
-  font-weight: 400;
   font-size: 38px;
   color: #df3d0f;
 }
@@ -641,7 +615,6 @@ img {
 }
 
 .footer-title {
-  font-weight: 400;
   font-size: 28px;
 }
 
@@ -653,6 +626,13 @@ img {
   li {
     min-width: 140px;
     max-width: 280px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      stroke: #fff;
+      fill: #fff;
+    }
   }
 }
 
@@ -666,12 +646,13 @@ img {
   color: #e5333d;
 }
 
-.adress {
-  text-transform: none;
+.footer-item:hover + svg,
+.footer-item:focus + svg {
+  stroke: #e5333d;
+  fill: #e5333d;
 }
 
 .footer-text {
-  font-weight: 400;
   font-size: 18px;
   text-align: center;
   margin-top: 208px;
