@@ -711,6 +711,12 @@ img {
       fill: #fff;
     }
   }
+
+  li:hover svg {
+    fill: #df3d0f;
+    stroke: #df3d0f;
+    color: #df3d0f;
+  }
 }
 
 .footer-item {
