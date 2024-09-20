@@ -359,42 +359,49 @@ img {
 }
 
 .about-us-main {
-  margin-top: 216px;
+  margin-top: 131px;
   display: flex;
-  gap: 109px;
+  flex-direction: column-reverse;
+  gap: 49px;
 }
 
 .about-us-img {
   border-radius: 35px;
-  width: 515px;
-  height: 457px;
+  width: 399px;
+  height: 355px;
   background-color: #f77307;
   box-shadow: 4px -40px 60px rgba(42, 107, 148, 0.5);
 }
 
 .about-text-wrapper {
-  width: 628px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-main-title {
-  max-width: 508px;
-  font-size: 38px;
+  max-width: 400px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .about-main-text {
-  font-family: "Poppins";
-  font-size: 24px;
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 12px;
+  text-align: center;
+  max-width: 400px;
 }
 
 .about-main-description {
-  font-family: "Poppins";
+  max-width: 400px;
   font-size: 18px;
   margin-top: 12px;
+  text-align: center;
 }
 
 .about-btn {
-  margin-top: 23px;
+  margin-top: 53px;
   padding: 12px 40px;
   background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
   font-size: 18px;
@@ -412,35 +419,11 @@ img {
 /* services */
 
 .services-title {
-  font-size: 38px;
+  font-size: 28px;
   text-align: center;
-  max-width: 896px;
+  max-width: 380px;
   margin: 0 auto;
-  margin-top: 215px;
-}
-
-.services-list-item {
-  border-radius: 25px;
-  width: 400px;
-  height: 416px;
-  background-color: #101d4f;
-  padding: 24px 38px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.services-list-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  background-color: #f77307;
-  position: absolute;
-  top: 0;
-  transform: translateY(-50%);
+  margin-top: 259px;
 }
 
 .services-btn {
@@ -452,6 +435,7 @@ img {
   font-size: 18px;
   color: #e1400f;
   margin-top: 40px;
+  transform: rotate(-5deg);
 
   svg {
     width: 16px;
@@ -474,7 +458,7 @@ img {
 }
 
 .services-text {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   max-width: 960px;
   margin: 10px auto;
@@ -483,21 +467,60 @@ img {
 
 .services-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 44px;
-  margin: 140px auto;
+  gap: 137px;
+  margin-top: 103px;
+}
+
+.services-list-item {
+  border-radius: 25px;
+  width: 400px;
+  height: 416px;
+  background-color: #101d4f;
+  padding: 24px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(10deg);
+}
+
+.background {
+  border-radius: 25px;
+  width: 400px;
+  height: 416px;
+  background: rgba(44, 43, 43, 0.44);
+  transform: rotate(-5deg);
+  position: relative;
+  top: 0;
+}
+
+.services-list-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background-color: #f77307;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
 }
 
 .services-list-title {
   font-size: 28px;
   text-align: center;
+  transform: rotate(-5deg);
 }
 
 .services-list-text {
   font-size: 18px;
   text-align: center;
   max-width: 320px;
+  transform: rotate(-5deg);
 }
 
 /* resource */
@@ -734,5 +757,53 @@ img {
     gap: 49px;
     padding-top: 58px;
     padding-bottom: 58px;
+  }
+
+  .about-us-main {
+    margin-top: 216px;
+    flex-direction: row;
+    gap: 109px;
+  }
+  .about-main-title {
+    max-width: 508px;
+    font-size: 38px;
+    text-align: start;
+  }
+  .about-main-text {
+    font-size: 24px;
+    text-align: start;
+    max-width: 508px;
+  }
+
+  .about-main-description {
+    max-width: 508px;
+    text-align: start;
+  }
+  .about-btn {
+    margin-top: 23px;
+    padding: 12px 40px;
+    font-size: 18px;
+  }
+  .about-text-wrapper {
+    width: 628px;
+    display: block;
+  }
+  .about-us-img {
+    width: 515px;
+    height: 457px;
+  }
+  .services-title {
+    font-size: 38px;
+    max-width: 896px;
+    margin-top: 215px;
+  }
+  .services-text {
+    font-size: 24px;
+  }
+  .services-list {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    margin: 140px auto;
   }
 }
