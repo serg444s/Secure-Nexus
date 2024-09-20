@@ -296,6 +296,7 @@ img {
   position: absolute;
   top: 0;
   transform: translateY(-50%);
+  box-shadow: 4px -20px 60px rgba(42, 107, 148, 0.5);
 }
 
 /* about us */
@@ -506,6 +507,8 @@ img {
   border-radius: 100%;
   background-color: #f77307;
   position: absolute;
+  box-shadow: 4px -20px 60px rgba(42, 107, 148, 0.5);
+
   top: 0;
   transform: translateY(-50%);
 }
@@ -527,27 +530,41 @@ img {
 
 .resource-container {
   display: flex;
+  flex-direction: column;
   background-color: rgba(59, 52, 160, 0.27);
-  padding: 80px 20px;
+  padding: 110px 20px;
   margin: 215px auto;
   align-items: center;
+  justify-content: center;
   margin-bottom: 152px;
+}
+.resource-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .resource-title {
-  font-size: 34px;
-  max-width: 631px;
+  font-size: 28px;
+  max-width: 360px;
+  text-align: center;
 }
 
 .resource-text {
   font-size: 18px;
   margin-top: 12px;
-  width: 419px;
+  max-width: 360px;
+  text-align: center;
 }
 
 .resource-list {
   display: flex;
+  flex-direction: column;
   gap: 80px;
+  margin-top: 59px;
+  justify-content: center;
+  align-items: center;
 }
 
 .resource-list-img {
@@ -555,32 +572,37 @@ img {
   height: 154px;
   border-radius: 100%;
   background-color: #f77307;
+  box-shadow: 4px -20px 60px rgba(42, 107, 148, 0.5);
 }
 
 .resource-item-title {
   font-size: 34px;
   text-align: center;
+  margin-top: 15px;
+  max-width: 180px;
 }
 
 /* contact */
 
 #contact {
   display: flex;
-  gap: 240px;
+  gap: 60px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.contact-main {
-  width: 477px;
-}
 .contact-title {
-  font-size: 34px;
+  font-size: 28px;
+  text-align: center;
+  width: 397px;
 }
 
 .contact-text {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 12px;
+  text-align: center;
+  width: 396px;
 }
 
 .contact-form {
@@ -596,6 +618,7 @@ img {
   border: none;
   resize: none;
   color: #fff;
+  width: 397px;
 }
 .contact-input::placeholder {
   color: #fff;
@@ -609,6 +632,7 @@ img {
   color: #fff;
   border: none;
   outline: none;
+  width: 397px;
 }
 
 .contact-btn:hover {
@@ -628,38 +652,55 @@ img {
 .footer {
   background-color: rgba(59, 52, 160, 0.27);
   margin-top: 215px;
-  padding: 86px;
+  /* padding: 50px; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 65px;
+  padding-top: 120px;
 }
 
 .footer-logo {
   font-size: 38px;
   color: #df3d0f;
+  width: 281px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer-wrap {
   display: flex;
   gap: 80px;
-  justify-content: center;
+  flex-direction: column;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
   gap: 60px;
   margin-top: 69px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-title {
   font-size: 28px;
+  max-width: 320px;
+  text-align: center;
 }
 
 .footer-list {
   display: flex;
   flex-direction: column;
   gap: 42px;
+  align-items: center;
+  justify-content: center;
 
   li {
-    min-width: 140px;
+    /* min-width: 140px; */
     max-width: 280px;
+
+    p {
+      text-align: center;
+    }
 
     svg {
       width: 18px;
@@ -673,6 +714,7 @@ img {
 .footer-item {
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
 }
 
 .footer-item:hover,
@@ -690,6 +732,7 @@ img {
   font-size: 18px;
   text-align: center;
   margin-top: 208px;
+  width: 400px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -805,5 +848,64 @@ img {
     flex-direction: row;
     gap: 44px;
     margin: 140px auto;
+  }
+  .resource-container {
+    flex-direction: row;
+    padding: 80px 20px;
+    margin: 215px auto;
+    align-items: center;
+    margin-bottom: 152px;
+  }
+  .resource-wrap {
+    align-items: start;
+    justify-content: center;
+  }
+  .resource-title {
+    font-size: 34px;
+    max-width: 631px;
+    text-align: start;
+  }
+
+  .resource-text {
+    font-size: 18px;
+    max-width: 420px;
+    text-align: start;
+  }
+  .resource-list {
+    flex-direction: row;
+    align-items: start;
+  }
+  .resource-container {
+    padding: 80px 20px;
+  }
+  #contact {
+    flex-direction: row;
+  }
+  .contact-main {
+    /* display: block; */
+    max-width: 600px;
+  }
+  .contact-title {
+    font-size: 34px;
+    text-align: start;
+    width: 599px;
+  }
+  .contact-text {
+    font-size: 24px;
+    text-align: start;
+    width: 584px;
+  }
+  .contact-input {
+    width: 477px;
+  }
+  .contact-btn {
+    width: 477px;
+  }
+  #contact {
+    gap: 240px;
+  }
+
+  .footer {
+    display: block;
   }
 }
