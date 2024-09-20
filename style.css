@@ -715,7 +715,6 @@ img {
   li:hover svg {
     fill: #df3d0f;
     stroke: #df3d0f;
-    color: #df3d0f;
   }
 }
 
@@ -739,6 +738,7 @@ img {
 .footer-text {
   font-size: 18px;
   text-align: center;
+  margin: 0 auto;
   margin-top: 208px;
   width: 400px;
 }
@@ -915,5 +915,25 @@ img {
 
   .footer {
     display: block;
+  }
+  .footer-wrap {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer-container {
+    align-items: flex-start;
+  }
+  .footer-title {
+    text-align: start;
+  }
+  .footer-list {
+    align-items: flex-start;
+    li p {
+      text-align: start;
+      max-width: 300px;
+    }
+  }
+  .footer-item {
+    text-align: start;
   }
 }
