@@ -54,7 +54,7 @@ img {
 .container {
   margin: 0 auto;
   width: 430px;
-  padding: 15px 75px;
+  padding: 77px 15px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -69,8 +69,10 @@ img {
 
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 35px;
 }
 
 .logo {
@@ -98,9 +100,11 @@ img {
 }
 
 .protection {
-  padding: 15px 8px;
+  padding: 8px;
+  font-size: 12px;
+  width: 143px;
+  text-align: center;
   background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
-  margin-left: 49px;
 }
 
 .protection:hover,
@@ -109,13 +113,16 @@ img {
 }
 
 .menu-open {
-  display: block;
+  display: flex;
   background-color: transparent;
   border: none;
   outline: none;
+  align-items: center;
+  justify-content: center;
 
   svg {
-    width: 50px;
+    width: 53px;
+    height: 35px;
     stroke: #fff;
   }
 }
@@ -124,14 +131,10 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
-  .menu-open {
-    display: none;
-  }
-
-  .header-navigation {
-    display: block;
-  }
+.modal-wrap {
+  display: flex;
+  align-items: center;
+  gap: 200px;
 }
 
 /* modal */
@@ -205,35 +208,40 @@ img {
 /* hero */
 
 .hero {
-  margin-top: 90px;
+  margin-top: 63px;
   display: flex;
-  gap: 90px;
+  flex-direction: column;
+  gap: 63px;
   align-items: center;
 }
 
 .hero-left {
-  width: 628px;
+  max-width: 100%;
 }
 
 .img-container {
-  width: 550px;
-  height: 470px;
-  background-image: url(/img/layer.png);
+  width: 100%;
+  height: 346px;
+  background-image: url(/img/layer1.png);
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: 28px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .hero-text {
-  font-size: 24px;
-  margin-bottom: 130px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 63px;
 }
 
 .btn-container {
   display: flex;
-  gap: 27px;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
 }
 
 .hero-button {
@@ -255,10 +263,11 @@ img {
 
 .hero-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 44px;
-  margin: 90px auto;
+  gap: 104px;
+  margin-top: 120px;
 }
 
 .hero-list-item {
@@ -271,17 +280,17 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-list-text {
   font-size: 24px;
   text-align: center;
-  margin-top: 114px;
 }
 
 .hero-list-img {
-  width: 150px;
-  height: 150px;
+  width: 134px;
+  height: 134px;
   border-radius: 100%;
   background-color: #f77307;
   position: absolute;
@@ -292,13 +301,15 @@ img {
 /* about us */
 
 .about-us-list {
+  margin-top: 102px;
   display: flex;
-  gap: 49px;
+  flex-direction: column;
+  gap: 58px;
   align-items: center;
   justify-content: center;
   background-color: rgba(59, 52, 160, 0.27);
-  padding-top: 58px;
-  padding-bottom: 58px;
+  padding-top: 99px;
+  padding-bottom: 99px;
 }
 
 .about-us-item {
@@ -656,4 +667,72 @@ img {
   font-size: 18px;
   text-align: center;
   margin-top: 208px;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu-open {
+    display: none;
+  }
+
+  .header-navigation {
+    display: block;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .protection {
+    padding: 15px 8px;
+    margin-left: 49px;
+    font-size: 14px;
+    width: 177px;
+  }
+
+  .hero {
+    margin-top: 90px;
+    gap: 90px;
+    flex-direction: row;
+  }
+  .hero-left {
+    width: 628px;
+  }
+  .hero-title {
+    font-size: 48px;
+    text-align: start;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    margin-bottom: 130px;
+    text-align: start;
+  }
+  .btn-container {
+    flex-direction: row;
+    gap: 27px;
+  }
+  .img-container {
+    width: 550px;
+    height: 470px;
+    background-image: url(/img/layer.png);
+  }
+  .hero-list {
+    flex-direction: row;
+    gap: 44px;
+    margin: 90px auto;
+  }
+  .hero-list-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-us-list {
+    margin-top: 102px;
+    flex-direction: row;
+    gap: 49px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
 }
