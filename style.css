@@ -683,7 +683,7 @@ img {
 
 .footer-title {
   font-size: 28px;
-  max-width: 320px;
+  max-width: 340px;
   text-align: center;
 }
 
@@ -696,15 +696,17 @@ img {
 
   li {
     /* min-width: 140px; */
-    max-width: 280px;
+    max-width: 330px;
+    display: flex;
+    gap: 30px;
 
     p {
       text-align: center;
     }
 
     svg {
-      width: 18px;
-      height: 18px;
+      width: 30px;
+      height: 30px;
       stroke: #fff;
       fill: #fff;
     }
